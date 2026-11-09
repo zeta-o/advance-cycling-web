@@ -22,7 +22,7 @@ export function SiteHeader() {
           <AdvanceMark subtitle="CYCLING TEAM" />
         </a>
 
-        <nav aria-label="Principal" className="ml-auto hidden gap-[22px] lg:flex">
+        <nav aria-label="Main" className="ml-auto hidden gap-[22px] lg:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
@@ -50,7 +50,7 @@ export function SiteHeader() {
                 <SheetTitle className="sr-only">Menu</SheetTitle>
                 <AdvanceMark subtitle="CYCLING TEAM" />
               </SheetHeader>
-              <nav aria-label="Móvil" className="grid gap-1 px-4">
+              <nav aria-label="Mobile" className="grid gap-1 px-4">
                 {navItems.map((item) => (
                   <a
                     key={item.href}

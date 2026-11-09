@@ -6,7 +6,7 @@ Sitio web de **Advance Cycling Team**, el programa costarricense de desarrollo d
 
 - [Next.js 16](https://nextjs.org) (App Router, Turbopack, Cache Components)
 - [shadcn/ui](https://ui.shadcn.com) sobre Base UI + Tailwind CSS v4
-- [Zustand](https://zustand.docs.pmnd.rs) para el idioma (ES/EN), persistido en `localStorage`
+- [Zustand](https://zustand.docs.pmnd.rs) para el idioma (EN/ES, inglés por defecto), persistido en `localStorage`
 
 ## Desarrollo
 

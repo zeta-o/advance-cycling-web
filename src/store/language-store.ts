@@ -11,13 +11,13 @@ type LanguageState = {
 
 /**
  * Site language, persisted in localStorage.
- * `skipHydration` keeps the server render and the first client render identical (Spanish);
+ * `skipHydration` keeps the server render and the first client render identical (English);
  * <LanguageSync /> rehydrates the saved choice after mount.
  */
 export const useLanguageStore = create<LanguageState>()(
   persist(
     (set, get) => ({
-      language: "es",
+      language: "en",
       setLanguage: (language) => set({ language }),
       toggleLanguage: () => set({ language: get().language === "es" ? "en" : "es" }),
     }),

@@ -20,7 +20,7 @@ export function LanguageToggle() {
       spacing={0}
       className="rounded-full border border-line p-[3px]"
     >
-      {(["es", "en"] as const).map((lang) => (
+      {(["en", "es"] as const).map((lang) => (
         <ToggleGroupItem
           key={lang}
           value={lang}

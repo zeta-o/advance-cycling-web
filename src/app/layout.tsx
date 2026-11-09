@@ -20,12 +20,13 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
   title: "Advance Cycling",
   description:
-    "Advance Cycling: programa costarricense de desarrollo de ciclismo juvenil que conecta a jóvenes atletas con universidades y competencia internacional.",
+    "Advance Cycling: a Costa Rican youth cycling development program that connects young athletes with universities and international racing.",
   openGraph: {
     title: "Advance Cycling",
-    description: "Programa costarricense de desarrollo de ciclismo juvenil. Parte de Advance Talent Hub.",
+    description: "A Costa Rican youth cycling development program. Part of Advance Talent Hub.",
     images: ["/images/hero-podium.jpg"],
-    locale: "es_CR",
+    locale: "en_US",
+    alternateLocale: ["es_CR"],
     type: "website",
   },
 }
@@ -37,7 +38,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="es" className={`${montserrat.variable} ${jetbrainsMono.variable} antialiased`}>
+    <html lang="en" className={`${montserrat.variable} ${jetbrainsMono.variable} antialiased`}>
       <body className="min-h-full">
         <LanguageSync />
         {children}
