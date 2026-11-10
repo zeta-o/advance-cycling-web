@@ -1,10 +1,15 @@
 export const TALENT_HUB_URL = "https://advancetalenthub.com"
 
+/** One page per menu option, in reading order. */
 export const navItems = [
-  { href: "#proyecto", key: "project" },
-  { href: "#talent-hub", key: "talentHub" },
-  { href: "#metodo", key: "method" },
-  { href: "#atletas", key: "riders" },
-  { href: "#crecimiento", key: "growth" },
-  { href: "#equipo", key: "team" },
+  { href: "/project", key: "project" },
+  { href: "/talent-hub", key: "talentHub" },
+  { href: "/method", key: "method" },
+  { href: "/riders", key: "riders" },
+  { href: "/growth", key: "growth" },
+  { href: "/team", key: "team" },
 ] as const
+
+export type NavKey = (typeof navItems)[number]["key"]
+
+export const PARTNERS_HREF = "/partners"

@@ -7,7 +7,7 @@ export function Project() {
   const t = useDictionary()
   return (
     <Section id="proyecto">
-      <SectionHeading eyebrow={t.project.eyebrow} title={t.project.title} />
+      <SectionHeading as="h1" eyebrow={t.project.eyebrow} title={t.project.title} />
       <div className="grid max-w-[64ch] gap-[1.1em] font-light">
         <p>
           {t.project.p1Before}

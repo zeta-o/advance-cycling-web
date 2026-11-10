@@ -3,6 +3,8 @@ import type { ReactNode } from "react"
 import { cn } from "@/lib/utils"
 
 type SectionHeadingProps = {
+  /** Use "h1" when the section is the main content of its own page. */
+  as?: "h1" | "h2"
   eyebrow: string
   title: string
   lede?: ReactNode
@@ -10,11 +12,11 @@ type SectionHeadingProps = {
   children?: ReactNode
 }
 
-export function SectionHeading({ eyebrow, title, lede, className, children }: SectionHeadingProps) {
+export function SectionHeading({ as: Heading = "h2", eyebrow, title, lede, className, children }: SectionHeadingProps) {
   return (
     <div className={cn("mb-10 grid max-w-[760px] gap-3.5", className)}>
       <p className="eyebrow">{eyebrow}</p>
-      <h2 className="h2">{title}</h2>
+      <Heading className="h2">{title}</Heading>
       {lede && <p className="lede">{lede}</p>}
       {children}
     </div>

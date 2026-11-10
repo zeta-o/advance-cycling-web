@@ -17,7 +17,7 @@ export function Growth() {
   const t = useDictionary()
   return (
     <Section id="crecimiento" className="bg-glow-navy">
-      <SectionHeading eyebrow={t.growth.eyebrow} title={t.growth.title} lede={t.growth.lede} />
+      <SectionHeading as="h1" eyebrow={t.growth.eyebrow} title={t.growth.title} lede={t.growth.lede} />
       <div className="grid gap-4 md:grid-cols-3">
         {plan.map((season, i) => (
           <Card

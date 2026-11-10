@@ -1,20 +1,24 @@
 import type { ComponentProps } from "react"
+import Link from "next/link"
 import { ArrowRight, ArrowUpRight } from "lucide-react"
 
 import { buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
-type CtaLinkProps = ComponentProps<"a"> & {
+type CtaLinkProps = Omit<ComponentProps<"a">, "href"> & {
+  href: string
   variant?: "primary" | "ghost"
   size?: "md" | "sm"
   icon?: "arrow" | "external" | "none"
 }
 
-/** Pill-shaped link styled with the shadcn button variants. */
-export function CtaLink({ variant = "primary", size = "md", icon = "none", className, children, ...props }: CtaLinkProps) {
-  const external = props.href?.startsWith("http")
+/** Pill-shaped link styled with the shadcn button variants. Internal paths use next/link. */
+export function CtaLink({ href, variant = "primary", size = "md", icon = "none", className, children, ...props }: CtaLinkProps) {
+  const external = href.startsWith("http")
+  const Comp = external ? "a" : Link
   return (
-    <a
+    <Comp
+      href={href}
       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       {...props}
       className={cn(
@@ -30,6 +34,6 @@ export function CtaLink({ variant = "primary", size = "md", icon = "none", class
       {children}
       {icon === "arrow" && <ArrowRight className="size-4" aria-hidden />}
       {icon === "external" && <ArrowUpRight className="size-4" aria-hidden />}
-    </a>
+    </Comp>
   )
 }

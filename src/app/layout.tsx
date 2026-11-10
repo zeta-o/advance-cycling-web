@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next"
 import { JetBrains_Mono, Montserrat } from "next/font/google"
 
 import { LanguageSync } from "@/components/language-sync"
+import { SiteFooter } from "@/components/site/site-footer"
+import { SiteHeader } from "@/components/site/site-header"
 import "./globals.css"
 
 const montserrat = Montserrat({
@@ -18,7 +20,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
-  title: "Advance Cycling",
+  title: { default: "Advance Cycling", template: "%s · Advance Cycling" },
   description:
     "Advance Cycling: a Costa Rican youth cycling development program that connects young athletes with universities and international racing.",
   openGraph: {
@@ -41,7 +43,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${montserrat.variable} ${jetbrainsMono.variable} antialiased`}>
       <body className="min-h-full">
         <LanguageSync />
-        {children}
+        <SiteHeader />
+        <main>{children}</main>
+        <SiteFooter />
       </body>
     </html>
   )

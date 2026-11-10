@@ -23,14 +23,29 @@ npm run build && npm start
 
 Variable opcional: `NEXT_PUBLIC_SITE_URL` (URL pública, para las imágenes de Open Graph).
 
+## Páginas
+
+| Ruta | Contenido |
+| --- | --- |
+| `/` | Portada: hero, contexto, el problema y enlaces a cada página |
+| `/project` | Qué es Advance Cycling |
+| `/talent-hub` | Advance Cycling Team es parte de Advance Talent Hub |
+| `/method` | Los 4 pasos del método |
+| `/riders` | Los atletas |
+| `/growth` | Plan de crecimiento 2026–2028 |
+| `/team` | El equipo |
+| `/partners` | Cómo apoyar el proyecto (botón "Support the project") |
+
+El orden del menú y de la navegación anterior/siguiente sale de `navItems` en `src/lib/site.ts`.
+
 ## Estructura
 
 ```
 src/
-  app/                 layout, página y tema global (globals.css)
+  app/                 layout (header + footer), una carpeta por página y tema global (globals.css)
   components/
-    sections/          una sección del sitio por archivo (hero, riders, talent-hub, ...)
-    site/              header, footer, logo AdvanceMark, CtaLink, toggle de idioma
+    sections/          el contenido de cada página (hero, riders, talent-hub, ...)
+    site/              header, footer, logo AdvanceMark, CtaLink, toggle de idioma, ExploreGrid, PageNav
     ui/                componentes de shadcn
   content/dictionary.ts  todo el texto del sitio en español e inglés
   store/language-store.ts  store de Zustand del idioma

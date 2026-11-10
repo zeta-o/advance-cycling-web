@@ -8,7 +8,6 @@ export function Closing() {
   const t = useDictionary()
   return (
     <section
-      id="contacto"
       className="py-20 md:py-28"
       style={{
         background:
@@ -25,7 +24,7 @@ export function Closing() {
           <CtaLink href={TALENT_HUB_URL} icon="external">
             {t.closing.cta}
           </CtaLink>
-          <CtaLink href="#atletas" variant="ghost">
+          <CtaLink href="/riders" variant="ghost">
             {t.closing.ctaRiders}
           </CtaLink>
         </div>

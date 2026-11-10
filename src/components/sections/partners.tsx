@@ -9,7 +9,7 @@ export function Partners() {
   const t = useDictionary()
   return (
     <Section id="aliados">
-      <SectionHeading eyebrow={t.partners.eyebrow} title={t.partners.title} lede={t.partners.lede} />
+      <SectionHeading as="h1" eyebrow={t.partners.eyebrow} title={t.partners.title} lede={t.partners.lede} />
       <div className="mb-14 grid gap-4 md:grid-cols-2">
         {t.partners.offers.map((offer, i) => (
           <Card key={offer.title} className="content-start gap-2.5 rounded-[14px] border border-line p-[30px] ring-0">

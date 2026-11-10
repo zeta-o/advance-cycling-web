@@ -12,7 +12,7 @@ export function Team() {
   ]
   return (
     <Section id="equipo" className="bg-glow-lime">
-      <SectionHeading eyebrow={t.team.eyebrow} title={t.team.title} lede={t.team.lede} />
+      <SectionHeading as="h1" eyebrow={t.team.eyebrow} title={t.team.title} lede={t.team.lede} />
       <div className="grid max-w-[860px] gap-4 sm:grid-cols-2">
         {people.map((p) => (
           <Card key={p.name} className="content-start gap-2 rounded-[14px] border border-line p-7 ring-0">

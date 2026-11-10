@@ -2,6 +2,8 @@ import type { Language } from "@/store/language-store"
 
 const es = {
   nav: {
+    home: "Inicio",
+    partners: "Aliados",
     project: "El proyecto",
     talentHub: "Talent Hub",
     method: "Método",
@@ -219,12 +221,31 @@ const es = {
   footer: {
     part: "Parte de Advance Sports",
   },
+  explore: {
+    eyebrow: "Conoce el programa",
+    title: "Todo lo que hay detrás de Advance Cycling",
+    open: "Ver",
+    items: {
+      project: "Qué es Advance Cycling y por qué existe.",
+      talentHub: "Somos parte de Advance Talent Hub: del deporte a la universidad.",
+      method: "Los cuatro pasos para llevar a un atleta al siguiente nivel.",
+      riders: "Jimena, Daniela y Saúl, y el cupo que queremos llenar.",
+      growth: "De tres atletas en 2026 a un equipo de seis en 2028.",
+      team: "Las personas que dirigen el proyecto.",
+    },
+  },
+  pageNav: {
+    previous: "Anterior",
+    next: "Siguiente",
+  },
 }
 
 export type Dictionary = typeof es
 
 const en: Dictionary = {
   nav: {
+    home: "Home",
+    partners: "Partners",
     project: "The project",
     talentHub: "Talent Hub",
     method: "Method",
@@ -441,6 +462,23 @@ const en: Dictionary = {
   },
   footer: {
     part: "Part of Advance Sports",
+  },
+  explore: {
+    eyebrow: "Explore the program",
+    title: "Everything behind Advance Cycling",
+    open: "Open",
+    items: {
+      project: "What Advance Cycling is and why it exists.",
+      talentHub: "We are part of Advance Talent Hub: from sport to university.",
+      method: "The four steps that take a rider to the next level.",
+      riders: "Jimena, Daniela and Saúl, and the seat we want to fill.",
+      growth: "From three riders in 2026 to a squad of six in 2028.",
+      team: "The people who run the project.",
+    },
+  },
+  pageNav: {
+    previous: "Previous",
+    next: "Next",
   },
 }
 

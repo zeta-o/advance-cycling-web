@@ -9,7 +9,7 @@ export function Method() {
   const last = t.method.steps.length - 1
   return (
     <Section id="metodo" className="bg-glow-lime">
-      <SectionHeading eyebrow={t.method.eyebrow} title={t.method.title} />
+      <SectionHeading as="h1" eyebrow={t.method.eyebrow} title={t.method.title} />
       <ol className="border-t border-line">
         {t.method.steps.map((step, i) => (
           <li

@@ -19,7 +19,7 @@ export function Riders() {
 
   return (
     <Section id="atletas">
-      <SectionHeading eyebrow={t.riders.eyebrow} title={t.riders.title} lede={t.riders.lede} />
+      <SectionHeading as="h1" eyebrow={t.riders.eyebrow} title={t.riders.title} lede={t.riders.lede} />
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {riders.map((r) => (
           <Card

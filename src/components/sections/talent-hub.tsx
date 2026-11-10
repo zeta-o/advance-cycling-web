@@ -17,7 +17,7 @@ export function TalentHub() {
       <div className="mb-16 grid items-center gap-9 min-[861px]:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] min-[861px]:gap-14">
         <div className="grid min-w-0 justify-items-start gap-[18px]">
           <p className="eyebrow">{t.hub.eyebrow}</p>
-          <h2 className="h2">{t.hub.title}</h2>
+          <h1 className="h2">{t.hub.title}</h1>
           <p className="lede">{t.hub.lede}</p>
           <p className="lede">{t.hub.lede2}</p>
           <CtaLink href={TALENT_HUB_URL} variant="ghost" icon="external">
