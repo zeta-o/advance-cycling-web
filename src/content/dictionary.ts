@@ -235,6 +235,8 @@ const es = {
   },
   footer: {
     part: "Parte de Advance Sports",
+    socialCaption:
+      "Sigue a Advance Talent Hub en redes sociales. Ahí compartimos el día a día del equipo, resultados, noticias del programa y a las marcas que nos apoyan.",
   },
   explore: {
     eyebrow: "Conoce el programa",
@@ -491,6 +493,8 @@ const en: Dictionary = {
   },
   footer: {
     part: "Part of Advance Sports",
+    socialCaption:
+      "Follow Advance Talent Hub on social media. That is where we share the team's day to day, results, program news and the brands that support us.",
   },
   explore: {
     eyebrow: "Explore the program",
