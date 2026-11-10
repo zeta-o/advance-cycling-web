@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -43.5 192 192">
+  <!-- Advance isotype: three chevrons, gray -->
+  <defs>
+    <mask id="a" maskUnits="userSpaceOnUse" x="-1" y="-43.5" width="192" height="192"><rect x="-1" y="-43.5" width="192" height="192" fill="#fff"/><polyline points="79,22 109,52.5 79,83" fill="none" stroke="#000" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/></mask>
+    <mask id="b" maskUnits="userSpaceOnUse" x="-1" y="-43.5" width="192" height="192"><rect x="-1" y="-43.5" width="192" height="192" fill="#fff"/><polyline points="136,22 166,52.5 136,83" fill="none" stroke="#000" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/></mask>
+  </defs>
+  <g fill="none" stroke="#9a9a9a" stroke-width="40" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="22,22 52,52.5 22,83" mask="url(#a)"/>
+    <polyline points="79,22 109,52.5 79,83" mask="url(#b)"/>
+    <polyline points="136,22 166,52.5 136,83"/>
+  </g>
+</svg>
