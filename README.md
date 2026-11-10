@@ -38,6 +38,7 @@ Variables de entorno (ver `.env.example`):
 | `/project` | Qué es Advance Cycling, los atletas (`/project#riders`) y el plan de crecimiento 2026–2028 (`/project#growth`) |
 | `/talent-hub` | Advance Cycling Team es parte de Advance Talent Hub |
 | `/method` | Los 4 pasos del método |
+| `/calendar` | Calendario 2027: fechas confirmadas por mes y eventos por confirmar. Las fechas se editan en `src/content/calendar.ts` |
 | `/team` | El equipo |
 | `/contact` | Formulario de contacto (botón "Contact us" del cierre). Llega a `CONTACT_TO_EMAIL` con *reply-to* del visitante |
 | `/partners` | Buscamos patrocinadores: cómo apoyar y qué recibe un aliado (también el botón "Support the project") |
