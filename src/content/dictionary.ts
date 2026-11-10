@@ -67,7 +67,7 @@ const es = {
   hub: {
     eyebrow: "Parte de algo más grande",
     title: "Advance Cycling Team es parte de Advance Talent Hub",
-    lede: "Advance Talent Hub es la plataforma de Advance Sports que desarrolla a jóvenes atletas y los conecta con universidades en Estados Unidos y otros países. Usamos el deporte como puerta de entrada a una beca, una educación y una carrera.",
+    lede: "Advance Talent Hub es la plataforma de Advance Sports que desarrolla a jóvenes atletas y los conecta con universidades en Estados Unidos y otros países. Usamos el deporte como puerta de entrada a una beca, una educación y una carrera. Hoy la plataforma trabaja con fútbol, y estamos en el proceso de abrirla a dos deportes adicionales: ciclismo y voleibol.",
     lede2:
       "Advance Cycling Team lleva ese mismo modelo al ciclismo: los atletas compiten con nosotros y su temporada alimenta un perfil que los entrenadores universitarios pueden evaluar.",
     cta: "Visita advancetalenthub.com",
@@ -88,8 +88,8 @@ const es = {
         body: "Ponemos ese perfil frente a entrenadores universitarios en EE. UU. y otros países, y la temporada se convierte en una conversación sobre becas.",
       },
       {
-        title: "Abrimos más deportes",
-        body: "La plataforma ha estado dedicada al fútbol y ahora se abre a otros deportes. El ciclismo es el primero.",
+        title: "Sumamos dos deportes",
+        body: "Talent Hub nació con el fútbol. Ahora estamos en el proceso de abrir dos deportes adicionales: ciclismo y voleibol.",
       },
     ],
   },
@@ -306,7 +306,7 @@ const en: Dictionary = {
   hub: {
     eyebrow: "Part of something bigger",
     title: "Advance Cycling Team is part of Advance Talent Hub",
-    lede: "Advance Talent Hub is the Advance Sports platform that develops young athletes and connects them with universities in the United States and elsewhere. We use sport as the way in to a scholarship, an education and a career.",
+    lede: "Advance Talent Hub is the Advance Sports platform that develops young athletes and connects them with universities in the United States and elsewhere. We use sport as the way in to a scholarship, an education and a career. Today the platform works with soccer, and we are in the process of opening it to two additional sports: cycling and volleyball.",
     lede2:
       "Advance Cycling Team brings that same model to cycling: riders compete with us, and their season feeds a profile that university coaches can evaluate.",
     cta: "Visit advancetalenthub.com",
@@ -327,8 +327,8 @@ const en: Dictionary = {
         body: "We put that profile in front of university coaches in the U.S. and elsewhere, turning the season into a scholarship conversation.",
       },
       {
-        title: "We open more sports",
-        body: "The platform has been dedicated to soccer and is now opening to other sports. Cycling is the first of them.",
+        title: "Two more sports",
+        body: "Talent Hub started with soccer. We are now in the process of opening two additional sports: cycling and volleyball.",
       },
     ],
   },
