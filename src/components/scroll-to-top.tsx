@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation"
 import { useEffect, useLayoutEffect, useRef } from "react"
 
 /**
- * Starts every new page at the top.
+ * Starts every new page at the top, or at its #anchor when the link has one.
  * Internal links use `scroll={false}`: with Cache Components, Next keeps previous pages
  * mounted (hidden) and its own scroll handling lands on the wrong spot under our sticky header.
  * Back/forward navigations are left alone so the browser restores the previous position.
@@ -27,7 +27,11 @@ export function ScrollToTop() {
       first.current = false
       return
     }
-    if (!fromHistory.current && !window.location.hash) window.scrollTo(0, 0)
+    if (!fromHistory.current) {
+      const target = window.location.hash ? document.getElementById(window.location.hash.slice(1)) : null
+      if (target) target.scrollIntoView()
+      else window.scrollTo(0, 0)
+    }
     fromHistory.current = false
   }, [pathname])
 

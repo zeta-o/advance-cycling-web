@@ -29,7 +29,7 @@ export function Hero() {
           </h1>
           <p className="lede">{t.hero.lede}</p>
           <div className="mt-2 flex flex-wrap gap-3">
-            <CtaLink href="/riders" icon="arrow">
+            <CtaLink href="/project#riders" icon="arrow">
               {t.hero.ctaRiders}
             </CtaLink>
             <CtaLink href="/partners" variant="ghost">

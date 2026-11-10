@@ -24,7 +24,7 @@ export function Closing() {
           <CtaLink href={TALENT_HUB_URL} icon="external">
             {t.closing.cta}
           </CtaLink>
-          <CtaLink href="/riders" variant="ghost">
+          <CtaLink href="/project#riders" variant="ghost">
             {t.closing.ctaRiders}
           </CtaLink>
         </div>

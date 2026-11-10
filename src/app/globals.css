@@ -96,7 +96,8 @@
   html {
     @apply font-sans;
     scroll-behavior: smooth;
-    scroll-padding-top: 76px;
+    /* Anchors (e.g. /project#riders) stop just below the sticky header. */
+    scroll-padding-top: calc(68px + env(safe-area-inset-top, 0px));
   }
   body {
     @apply bg-background text-foreground antialiased;
