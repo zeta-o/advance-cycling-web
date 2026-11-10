@@ -184,6 +184,15 @@ const es = {
         body: "Precios fijos por temporada en bicicletas, repuestos e indumentaria para el equipo. Cualquiera de las dos opciones es un buen punto de partida que crece con los años.",
       },
     ],
+    commitment: {
+      eyebrow: "Nuestro compromiso",
+      title: "Trabajamos la visibilidad de tu marca todo el año",
+      paragraphs: [
+        "Dar exposición a las marcas que nos apoyan es parte del proyecto, no un extra. Y no se limita a las competencias: vamos a estar promoviendo a nuestros aliados de forma constante, en redes sociales, en el contenido que producimos, en eventos y en cada espacio donde se presente el equipo.",
+        "Lo hacemos con un equipo serio y con experiencia en marketing y comunicación, que planifica y da seguimiento a la visibilidad de cada marca durante toda la temporada.",
+      ],
+      points: ["En cada competencia", "En redes y contenido, todo el año", "Con un equipo experto en la materia"],
+    },
     returnsTitle: "Lo que recibe un aliado",
     returns: [
       {
@@ -431,6 +440,15 @@ const en: Dictionary = {
         body: "Fixed season pricing on bikes, parts and apparel for the team. Either option is a workable starting point that grows over several seasons.",
       },
     ],
+    commitment: {
+      eyebrow: "Our commitment",
+      title: "We work on your brand's visibility all year round",
+      paragraphs: [
+        "Giving exposure to the brands that support us is part of the project, not an extra. And it does not stop at the races: we will promote our partners constantly, on social media, in the content we produce, at events and everywhere the team is presented.",
+        "We do it with a serious team that has real experience in marketing and communication, planning and following up on each brand's visibility throughout the season.",
+      ],
+      points: ["At every race", "On social media and in content, all year", "With a team that knows the field"],
+    },
     returnsTitle: "What a partner gets",
     returns: [
       {

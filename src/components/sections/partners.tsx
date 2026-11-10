@@ -1,5 +1,7 @@
 "use client"
 
+import { Check } from "lucide-react"
+
 import { Section } from "@/components/site/section-heading"
 import { Card } from "@/components/ui/card"
 import { useDictionary } from "@/hooks/use-dictionary"
@@ -51,6 +53,26 @@ export function Partners() {
           </div>
         ))}
       </div>
+
+      <Card className="card-lime mt-16 grid gap-8 rounded-[14px] border p-7 ring-0 md:p-10 min-[861px]:grid-cols-[minmax(0,1fr)_minmax(0,1.25fr)] min-[861px]:gap-16">
+        <div className="grid min-w-0 content-start gap-3.5">
+          <p className="eyebrow">{t.partners.commitment.eyebrow}</p>
+          <h2 className="text-[clamp(1.5rem,2.8vw,2.1rem)] leading-[1.1] font-black">{t.partners.commitment.title}</h2>
+          <ul className="mt-3 grid gap-2.5">
+            {t.partners.commitment.points.map((point) => (
+              <li key={point} className="flex items-start gap-2.5 font-semibold text-fg">
+                <Check className="mt-1 size-4 shrink-0 text-lime" aria-hidden />
+                {point}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="grid min-w-0 max-w-[64ch] content-start gap-[1.1em] text-[17px] font-light">
+          {t.partners.commitment.paragraphs.map((p) => (
+            <p key={p}>{p}</p>
+          ))}
+        </div>
+      </Card>
     </Section>
   )
 }
