@@ -21,7 +21,14 @@ Abre http://localhost:3000.
 npm run build && npm start
 ```
 
-Variable opcional: `NEXT_PUBLIC_SITE_URL` (URL pública, para las imágenes de Open Graph).
+Variables de entorno (ver `.env.example`):
+
+| Variable | Para qué |
+| --- | --- |
+| `RESEND_API_KEY` | Envía los mensajes del formulario de `/contact` con [Resend](https://resend.com). Sin ella el formulario muestra un error con el correo de contacto. |
+| `RESEND_FROM` | Remitente en un dominio verificado en Resend, p. ej. `Advance Cycling <contacto@advancetalenthub.com>`. Sin dominio verificado, Resend solo entrega al correo dueño de la cuenta. |
+| `CONTACT_TO_EMAIL` | Destino de los mensajes (por defecto `alonzo@advancetalenthub.com`). |
+| `NEXT_PUBLIC_SITE_URL` | URL pública, para las imágenes de Open Graph. |
 
 ## Páginas
 
@@ -32,6 +39,7 @@ Variable opcional: `NEXT_PUBLIC_SITE_URL` (URL pública, para las imágenes de O
 | `/talent-hub` | Advance Cycling Team es parte de Advance Talent Hub |
 | `/method` | Los 4 pasos del método |
 | `/team` | El equipo |
+| `/contact` | Formulario de contacto (botón "Contact us" del cierre). Llega a `CONTACT_TO_EMAIL` con *reply-to* del visitante |
 | `/partners` | Buscamos patrocinadores: cómo apoyar y qué recibe un aliado (también el botón "Support the project") |
 
 `/riders` y `/growth` redirigen a `/project#riders` y `/project#growth`.

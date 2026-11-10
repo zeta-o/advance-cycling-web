@@ -2,7 +2,6 @@
 
 import { CtaLink } from "@/components/site/cta-link"
 import { useDictionary } from "@/hooks/use-dictionary"
-import { TALENT_HUB_URL } from "@/lib/site"
 
 export function Closing() {
   const t = useDictionary()
@@ -21,7 +20,7 @@ export function Closing() {
         </h2>
         <p className="lede max-w-[58ch]">{t.closing.lede}</p>
         <div className="flex flex-wrap gap-3">
-          <CtaLink href={TALENT_HUB_URL} icon="external">
+          <CtaLink href="/contact" icon="arrow">
             {t.closing.cta}
           </CtaLink>
           <CtaLink href="/project#riders" variant="ghost">
