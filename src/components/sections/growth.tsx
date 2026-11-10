@@ -1,8 +1,10 @@
 "use client"
 
+import { CtaLink } from "@/components/site/cta-link"
 import { Section, SectionHeading } from "@/components/site/section-heading"
 import { Card } from "@/components/ui/card"
 import { useDictionary } from "@/hooks/use-dictionary"
+import { PARTNERS_HREF } from "@/lib/site"
 import { cn } from "@/lib/utils"
 
 const plan = [
@@ -56,6 +58,16 @@ export function Growth() {
             <p className="text-[0.97rem] font-light">{t.growth.seasons[i].body}</p>
           </Card>
         ))}
+      </div>
+
+      <div className="mt-10 flex flex-wrap items-center justify-between gap-x-10 gap-y-5 border-t border-line pt-8">
+        <div className="grid max-w-[64ch] gap-2">
+          <p className="font-heading text-[1.15rem] font-extrabold text-fg">{t.growth.beyondTitle}</p>
+          <p className="font-light">{t.growth.beyond}</p>
+        </div>
+        <CtaLink href={PARTNERS_HREF} variant="ghost" icon="arrow">
+          {t.growth.beyondCta}
+        </CtaLink>
       </div>
     </Section>
   )

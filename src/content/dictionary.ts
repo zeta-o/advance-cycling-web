@@ -160,6 +160,10 @@ const es = {
       },
     ],
     ridersLabel: "atletas",
+    beyondTitle: "Este es nuestro plan conservador",
+    beyond:
+      "Nos gustaría ir más allá y brindar oportunidades a más jóvenes ciclistas de la región. Ese crecimiento va a llegar de la mano de los resultados y de los patrocinios que logremos sumar.",
+    beyondCta: "Ayúdanos a crecer",
   },
   partners: {
     eyebrow: "Aliados",
@@ -418,6 +422,10 @@ const en: Dictionary = {
       },
     ],
     ridersLabel: "riders",
+    beyondTitle: "This is our conservative plan",
+    beyond:
+      "We would like to go further and open opportunities to more young riders across the region. That growth will come with results and with the sponsorships we are able to bring in.",
+    beyondCta: "Help us grow",
   },
   partners: {
     eyebrow: "Partners",
