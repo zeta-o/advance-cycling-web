@@ -28,14 +28,13 @@ Variable opcional: `NEXT_PUBLIC_SITE_URL` (URL pública, para las imágenes de O
 | Ruta | Contenido |
 | --- | --- |
 | `/` | Portada: hero, contexto, el problema y enlaces a cada página |
-| `/project` | Qué es Advance Cycling y los atletas (`/project#riders`) |
+| `/project` | Qué es Advance Cycling, los atletas (`/project#riders`) y el plan de crecimiento 2026–2028 (`/project#growth`) |
 | `/talent-hub` | Advance Cycling Team es parte de Advance Talent Hub |
 | `/method` | Los 4 pasos del método |
-| `/growth` | Plan de crecimiento 2026–2028 |
 | `/team` | El equipo |
 | `/partners` | Cómo apoyar el proyecto (botón "Support the project") |
 
-`/riders` redirige a `/project#riders`.
+`/riders` y `/growth` redirigen a `/project#riders` y `/project#growth`.
 
 El orden del menú y de la navegación anterior/siguiente sale de `navItems` en `src/lib/site.ts`.
 

@@ -6,8 +6,9 @@ const nextConfig: NextConfig = {
   partialPrefetching: true,
   async redirects() {
     return [
-      // The riders now live on the project page.
+      // Riders and Growth now live on the project page.
       { source: "/riders", destination: "/project#riders", permanent: true },
+      { source: "/growth", destination: "/project#growth", permanent: true },
     ]
   },
   turbopack: {
