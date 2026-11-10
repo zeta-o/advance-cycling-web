@@ -110,10 +110,6 @@
     @apply font-heading text-fg;
     text-wrap: balance;
   }
-  /* Next.js scrolls the new page's first element into view on navigation; keep it below the sticky header. */
-  main > * {
-    scroll-margin-top: calc(68px + env(safe-area-inset-top, 0px));
-  }
   :focus-visible {
     outline: 2px solid var(--lime);
     outline-offset: 3px;

@@ -13,8 +13,8 @@ export function Riders() {
   const t = useDictionary()
   const riders = [
     { name: "Jimena Arroyo", img: "/images/rider-jimena.jpg", w: 484, h: 300, copy: t.riders.jimena, badge: t.riders.jimena.badge, champ: true, pos: "50% 50%" },
-    { name: "Daniela Arroyo", img: "/images/rider-daniela.jpg", w: 531, h: 282, copy: t.riders.daniela, badge: null, champ: false, pos: "50% 50%" },
-    { name: "Saúl Vargas", img: "/images/rider-saul.jpg", w: 1000, h: 557, copy: t.riders.saul, badge: null, champ: false, pos: "30% 50%" },
+    { name: "Daniela Arroyo", img: "/images/daniela-arroyo.jpg", w: 1000, h: 557, copy: t.riders.daniela, badge: null, champ: false, pos: "30% 50%" },
+    { name: "Saúl Vargas", img: "/images/saul-vargas.jpg", w: 531, h: 282, copy: t.riders.saul, badge: null, champ: false, pos: "50% 50%" },
   ]
 
   return (

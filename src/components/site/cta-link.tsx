@@ -19,7 +19,7 @@ export function CtaLink({ href, variant = "primary", size = "md", icon = "none",
   return (
     <Comp
       href={href}
-      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : { scroll: false })}
       {...props}
       className={cn(
         buttonVariants({ variant: variant === "primary" ? "default" : "outline" }),

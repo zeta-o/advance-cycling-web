@@ -18,6 +18,7 @@ export function ExploreGrid() {
           <li key={item.href}>
             <Link
               href={item.href}
+              scroll={false}
               className="group grid h-full content-start gap-2 rounded-[14px] border border-line bg-ink-2 p-6 transition-colors hover:border-[color-mix(in_srgb,var(--lime)_45%,var(--line))]"
             >
               <span className="flex items-center justify-between gap-4">

@@ -22,7 +22,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-[env(safe-area-inset-top,0px)] z-50 border-b border-line bg-ink/85 backdrop-blur-md">
       <div className="container-site flex min-h-[68px] items-center gap-6">
-        <Link href="/" aria-label="Advance Cycling Team" className="shrink-0">
+        <Link href="/" scroll={false} aria-label="Advance Cycling Team" className="shrink-0">
           <AdvanceMark subtitle="CYCLING TEAM" />
         </Link>
 
@@ -33,6 +33,7 @@ export function SiteHeader() {
               <Link
                 key={item.href}
                 href={item.href}
+                scroll={false}
                 aria-current={active ? "page" : undefined}
                 className={cn(
                   "relative py-1 text-[0.86rem] font-semibold no-underline transition-colors hover:text-lime",
@@ -69,6 +70,7 @@ export function SiteHeader() {
                       <Link
                         key={item.href}
                         href={item.href}
+                        scroll={false}
                         aria-current={active ? "page" : undefined}
                         onClick={() => setOpen(false)}
                         className={cn(

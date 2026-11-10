@@ -19,7 +19,7 @@ export function PageNav({ current }: { current: string }) {
     <nav aria-label={`${t.pageNav.previous} / ${t.pageNav.next}`} className="border-b border-line">
       <div className="container-site grid grid-cols-2 gap-4 py-8">
         {prev ? (
-          <Link href={prev.href} className="group grid gap-1 justify-self-start">
+          <Link href={prev.href} scroll={false} className="group grid gap-1 justify-self-start">
             <span className="flex items-center gap-1.5 font-mono text-[0.74rem] tracking-[0.08em] text-fg-3 uppercase">
               <ArrowLeft className="size-3.5 transition-transform group-hover:-translate-x-0.5" aria-hidden />
               {t.pageNav.previous}
@@ -30,7 +30,7 @@ export function PageNav({ current }: { current: string }) {
           <span />
         )}
         {next && (
-          <Link href={next.href} className="group grid justify-items-end gap-1 justify-self-end text-right">
+          <Link href={next.href} scroll={false} className="group grid justify-items-end gap-1 justify-self-end text-right">
             <span className="flex items-center gap-1.5 font-mono text-[0.74rem] tracking-[0.08em] text-fg-3 uppercase">
               {t.pageNav.next}
               <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden />

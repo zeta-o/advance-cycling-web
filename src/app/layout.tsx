@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next"
 import { JetBrains_Mono, Montserrat } from "next/font/google"
 
 import { LanguageSync } from "@/components/language-sync"
+import { ScrollToTop } from "@/components/scroll-to-top"
 import { SiteFooter } from "@/components/site/site-footer"
 import { SiteHeader } from "@/components/site/site-header"
 import "./globals.css"
@@ -43,6 +44,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${montserrat.variable} ${jetbrainsMono.variable} antialiased`}>
       <body className="min-h-full">
         <LanguageSync />
+        <ScrollToTop />
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />
