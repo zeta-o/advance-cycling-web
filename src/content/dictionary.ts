@@ -261,6 +261,8 @@ const es = {
     title: "La temporada 2027",
     lede: "Las competencias que el equipo tiene planificadas para 2027. Las fechas por confirmar se irán sumando conforme se publiquen.",
     confirmedTitle: "Fechas confirmadas",
+    secondHalfTitle: "Calendario por confirmar",
+    secondHalfBody: "Las fechas de la segunda mitad de la temporada se publicarán cuando estén definidas.",
     round: "Fecha",
     series: {
       roes: { name: "Copa ROES", detail: "6 fechas" },
@@ -577,6 +579,8 @@ const en: Dictionary = {
     title: "The 2027 season",
     lede: "The races the team has planned for 2027. Events still to be confirmed will be added as their dates are published.",
     confirmedTitle: "Confirmed dates",
+    secondHalfTitle: "Calendar to be confirmed",
+    secondHalfBody: "Dates for the second half of the season will be published once they are set.",
     round: "Round",
     series: {
       roes: { name: "Copa ROES", detail: "6 rounds" },

@@ -1,6 +1,6 @@
 "use client"
 
-import { CalendarClock, Globe } from "lucide-react"
+import { CalendarClock, Globe, Hourglass } from "lucide-react"
 
 import { Section, SectionHeading } from "@/components/site/section-heading"
 import { Card } from "@/components/ui/card"
@@ -101,6 +101,18 @@ export function Calendar() {
               </ul>
             </li>
           ))}
+          <li className="grid gap-x-8 gap-y-3 border-b border-line py-6 md:grid-cols-[140px_minmax(0,1fr)]">
+            <p className="font-heading text-[1.4rem] leading-none font-black text-fg-3 capitalize md:pt-3">
+              {monthFmt.format(utc("2027-08-01"))} – {monthFmt.format(utc("2027-12-01"))}
+            </p>
+            <div className="flex items-center gap-4 rounded-xl border border-dashed border-line px-4 py-4">
+              <Hourglass className="size-5 shrink-0 text-fg-3" aria-hidden />
+              <div className="grid gap-0.5">
+                <p className="font-heading text-[1.02rem] leading-tight font-extrabold text-fg">{c.secondHalfTitle}</p>
+                <p className="text-[0.88rem] text-fg-3">{c.secondHalfBody}</p>
+              </div>
+            </div>
+          </li>
         </ol>
       </Section>
 
