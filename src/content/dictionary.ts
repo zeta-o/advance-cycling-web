@@ -163,8 +163,15 @@ const es = {
   },
   partners: {
     eyebrow: "Aliados",
-    title: "Cómo puedes sumarte",
-    lede: "El método y los atletas ya están en marcha. Lo que falta es equipo a la altura de lo que estos jóvenes pueden hacer. Buscamos marcas y patrocinadores que quieran crecer con nosotros.",
+    title: "Buscamos aliados para llevar el ciclismo formativo al siguiente nivel",
+    pull: "Un proyecto que recién empieza,",
+    pullAccent: "con una meta clara.",
+    intro: [
+      "Advance Cycling es un proyecto reciente. Arrancamos con tres atletas, un método de trabajo definido y el respaldo de Advance Talent Hub, pero todavía estamos construyendo la base que necesita un equipo serio.",
+      "Por eso buscamos patrocinadores. Con su apoyo queremos llevar el ciclismo formativo costarricense al siguiente nivel: que los jóvenes talentos del país compitan con el equipo adecuado, corran fuera del país y tengan un camino real hacia el ciclismo profesional o hacia una beca universitaria.",
+      "No buscamos solo una marca en el uniforme. Buscamos aliados que quieran crecer con nosotros temporada a temporada y ser parte de la historia de estos atletas desde el principio.",
+    ],
+    offersTitle: "Cómo puedes apoyar",
     offers: [
       {
         tag: "Equipo",
@@ -229,6 +236,7 @@ const es = {
       talentHub: "Somos parte de Advance Talent Hub: del deporte a la universidad.",
       method: "Los cuatro pasos para llevar a un atleta al siguiente nivel.",
       team: "Las personas que dirigen el proyecto.",
+      partners: "Somos un proyecto reciente y buscamos patrocinadores. Así puedes apoyar.",
     },
   },
   pageNav: {
@@ -402,8 +410,15 @@ const en: Dictionary = {
   },
   partners: {
     eyebrow: "Partners",
-    title: "How you can get involved",
-    lede: "The method and the riders are already in place. What is missing is equipment that matches what these young athletes can do. We are looking for brands and sponsors who want to grow with us.",
+    title: "Looking for partners to take youth cycling to the next level",
+    pull: "A project that is just getting started,",
+    pullAccent: "with a clear goal.",
+    intro: [
+      "Advance Cycling is a new project. We are starting with three riders, a defined way of working and the backing of Advance Talent Hub, but we are still building the foundation a serious team needs.",
+      "That is why we are looking for sponsors. With their support we want to take Costa Rican youth cycling to the next level: young talent from this country racing on the right equipment, competing abroad and following a real path to professional cycling or a university scholarship.",
+      "We are not only looking for a logo on the kit. We are looking for partners who want to grow with us season by season and be part of these riders' story from the start.",
+    ],
+    offersTitle: "How you can help",
     offers: [
       {
         tag: "Equipment",
@@ -468,6 +483,7 @@ const en: Dictionary = {
       talentHub: "We are part of Advance Talent Hub: from sport to university.",
       method: "The four steps that take a rider to the next level.",
       team: "The people who run the project.",
+      partners: "We are a new project looking for sponsors. Here is how you can help.",
     },
   },
   pageNav: {

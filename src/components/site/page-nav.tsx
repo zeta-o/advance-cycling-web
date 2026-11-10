@@ -4,9 +4,9 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 import { useDictionary } from "@/hooks/use-dictionary"
-import { navItems, PARTNERS_HREF } from "@/lib/site"
+import { navItems } from "@/lib/site"
 
-const sequence = [...navItems, { href: PARTNERS_HREF, key: "partners" } as const]
+const sequence = navItems
 
 /** Previous / next links between the inner pages, in menu order. */
 export function PageNav({ current }: { current: string }) {

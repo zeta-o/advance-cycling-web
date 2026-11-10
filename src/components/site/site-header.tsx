@@ -63,7 +63,7 @@ export function SiteHeader() {
                 <AdvanceMark subtitle="CYCLING TEAM" />
               </SheetHeader>
               <nav aria-label="Mobile" className="grid gap-1 px-4">
-                {[{ href: "/", key: "home" } as const, ...navItems, { href: PARTNERS_HREF, key: "partners" } as const].map(
+                {[{ href: "/", key: "home" } as const, ...navItems].map(
                   (item) => {
                     const active = pathname === item.href
                     return (

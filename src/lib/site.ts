@@ -6,6 +6,7 @@ export const navItems = [
   { href: "/talent-hub", key: "talentHub" },
   { href: "/method", key: "method" },
   { href: "/team", key: "team" },
+  { href: "/partners", key: "partners" },
 ] as const
 
 export type NavKey = (typeof navItems)[number]["key"]

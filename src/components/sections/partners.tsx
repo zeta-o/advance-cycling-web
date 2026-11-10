@@ -1,6 +1,6 @@
 "use client"
 
-import { Section, SectionHeading } from "@/components/site/section-heading"
+import { Section } from "@/components/site/section-heading"
 import { Card } from "@/components/ui/card"
 import { useDictionary } from "@/hooks/use-dictionary"
 import { cn } from "@/lib/utils"
@@ -9,7 +9,22 @@ export function Partners() {
   const t = useDictionary()
   return (
     <Section id="aliados">
-      <SectionHeading as="h1" eyebrow={t.partners.eyebrow} title={t.partners.title} lede={t.partners.lede} />
+      <div className="mb-16 grid items-start gap-7 min-[861px]:grid-cols-[minmax(0,1fr)_minmax(0,1.25fr)] min-[861px]:gap-16">
+        <div className="grid min-w-0 gap-3.5">
+          <p className="eyebrow">{t.partners.eyebrow}</p>
+          <h1 className="h2">{t.partners.title}</h1>
+          <p className="mt-5 font-heading text-[clamp(1.4rem,2.6vw,2rem)] leading-[1.15] font-black text-balance text-fg">
+            {t.partners.pull} <span className="text-lime">{t.partners.pullAccent}</span>
+          </p>
+        </div>
+        <div className="grid min-w-0 max-w-[64ch] gap-[1.1em] font-light">
+          {t.partners.intro.map((p) => (
+            <p key={p}>{p}</p>
+          ))}
+        </div>
+      </div>
+
+      <p className="mb-[18px] font-heading text-[1.15rem] font-extrabold text-fg">{t.partners.offersTitle}</p>
       <div className="mb-14 grid gap-4 md:grid-cols-2">
         {t.partners.offers.map((offer, i) => (
           <Card key={offer.title} className="content-start gap-2.5 rounded-[14px] border border-line p-[30px] ring-0">

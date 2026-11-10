@@ -32,7 +32,7 @@ Variable opcional: `NEXT_PUBLIC_SITE_URL` (URL pública, para las imágenes de O
 | `/talent-hub` | Advance Cycling Team es parte de Advance Talent Hub |
 | `/method` | Los 4 pasos del método |
 | `/team` | El equipo |
-| `/partners` | Cómo apoyar el proyecto (botón "Support the project") |
+| `/partners` | Buscamos patrocinadores: cómo apoyar y qué recibe un aliado (también el botón "Support the project") |
 
 `/riders` y `/growth` redirigen a `/project#riders` y `/project#growth`.
 
