@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Plus } from "lucide-react"
+import { ArrowUpRight, Plus } from "lucide-react"
 
 import { Section, SectionHeading } from "@/components/site/section-heading"
 import { Badge } from "@/components/ui/badge"
@@ -12,9 +12,9 @@ import { cn } from "@/lib/utils"
 export function Riders() {
   const t = useDictionary()
   const riders = [
-    { name: "Jimena Arroyo", img: "/images/rider-jimena.jpg", w: 484, h: 300, copy: t.riders.jimena, badge: t.riders.jimena.badge, champ: true, pos: "50% 50%" },
-    { name: "Daniela Arroyo", img: "/images/daniela-arroyo.jpg", w: 1000, h: 557, copy: t.riders.daniela, badge: null, champ: false, pos: "30% 50%" },
-    { name: "Saúl Vargas", img: "/images/saul-vargas.jpg", w: 531, h: 282, copy: t.riders.saul, badge: null, champ: false, pos: "50% 50%" },
+    { name: "Jimena Arroyo", img: "/images/rider-jimena.jpg", w: 484, h: 300, copy: t.riders.jimena, badge: t.riders.jimena.badge, champ: true, pos: "50% 50%", website: null },
+    { name: "Daniela Arroyo", img: "/images/daniela-arroyo.jpg", w: 1000, h: 557, copy: t.riders.daniela, badge: null, champ: false, pos: "30% 50%", website: null },
+    { name: "Saúl Vargas", img: "/images/saul-vargas.jpg", w: 531, h: 282, copy: t.riders.saul, badge: null, champ: false, pos: "50% 50%", website: "https://saul.bike" },
   ]
 
   return (
@@ -48,6 +48,18 @@ export function Riders() {
                 <Badge className="mt-2.5 h-auto px-[11px] py-[5px] font-heading text-[0.7rem] font-extrabold">
                   {r.badge}
                 </Badge>
+              )}
+              {r.website && (
+                <a
+                  href={r.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${r.name} · ${r.website.replace("https://", "")}`}
+                  className="mt-2.5 inline-flex items-center gap-1 justify-self-start font-mono text-[0.8rem] text-sky underline-offset-4 hover:text-lime hover:underline"
+                >
+                  {r.website.replace("https://", "")}
+                  <ArrowUpRight className="size-3.5" aria-hidden />
+                </a>
               )}
             </div>
           </Card>
