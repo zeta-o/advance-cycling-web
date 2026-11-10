@@ -34,7 +34,7 @@ export async function sendContact(_prev: ContactState, formData: FormData): Prom
   const apiKey = process.env.RESEND_API_KEY
   if (!apiKey) {
     console.error("Contact form: RESEND_API_KEY is not set")
-    return { status: "error", reason: "not_configured", values }
+    return { status: "error", reason: "not_configured", code: "no-api-key", values }
   }
 
   const to = process.env.CONTACT_TO_EMAIL || DEFAULT_CONTACT_TO
@@ -63,12 +63,17 @@ export async function sendContact(_prev: ContactState, formData: FormData): Prom
       signal: AbortSignal.timeout(10_000),
     })
     if (!res.ok) {
-      console.error("Contact form: Resend responded", res.status, await res.text())
-      return { status: "error", reason: "send_failed", values }
+      const body = await res.text()
+      console.error("Contact form: Resend responded", res.status, body)
+      let name = ""
+      try {
+        name = String(JSON.parse(body).name ?? "")
+      } catch {}
+      return { status: "error", reason: "send_failed", code: `resend-${res.status}${name ? `-${name}` : ""}`, values }
     }
   } catch (error) {
     console.error("Contact form: request failed", error)
-    return { status: "error", reason: "send_failed", values }
+    return { status: "error", reason: "send_failed", code: "network", values }
   }
 
   return { status: "success" }

@@ -105,7 +105,10 @@ export function ContactForm() {
                 <p role="alert" className="rounded-lg border border-destructive/40 bg-destructive/10 px-4 py-3 text-[0.92rem] text-fg">
                   {state.reason === "validation" ? c.errors.validation : c.errors.unavailable}{" "}
                   {state.reason !== "validation" && (
-                    <span className="font-semibold select-all">{DEFAULT_CONTACT_TO}</span>
+                    <>
+                      <span className="font-semibold select-all">{DEFAULT_CONTACT_TO}</span>
+                      <span className="mt-1.5 block font-mono text-[0.72rem] text-fg-3">Ref: {state.code}</span>
+                    </>
                   )}
                 </p>
               )}

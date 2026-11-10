@@ -10,7 +10,13 @@ export type ContactState =
   | { status: "idle" }
   | { status: "success" }
   | { status: "error"; reason: "validation"; fields: ContactField[]; values: ContactValues }
-  | { status: "error"; reason: "not_configured" | "send_failed"; values: ContactValues }
+  | {
+      status: "error"
+      reason: "not_configured" | "send_failed"
+      /** Short diagnostic shown under the error, e.g. "no-api-key" or "resend-403-validation_error". */
+      code: string
+      values: ContactValues
+    }
 
 /** Where contact form messages are delivered. Override with CONTACT_TO_EMAIL. */
 export const DEFAULT_CONTACT_TO = "alonzo@advancetalenthub.com"
