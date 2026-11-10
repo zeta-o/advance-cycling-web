@@ -61,6 +61,7 @@ const es = {
     p1After:
       ", la empresa detrás de advancetalenthub.com, y comparte su propósito: desarrollar jóvenes atletas y conectarlos con universidades en Estados Unidos y otros países, para que su deporte les abra un lugar donde estudiar y seguir creciendo.",
     p2: "Además, el proyecto impulsa la participación en eventos internacionales. Correr fuera del país es lo que sube el nivel: enseña a los atletas lo que exige la competencia élite y lo que se necesita para sostenerse en ella.",
+    p3: "Todo esto es parte de un proceso serio y estructurado. Queremos que nuestros atletas tengan las herramientas para llegar a ser ciclistas profesionales o para seguir estudios universitarios, y que el ciclismo les abra puertas en cualquiera de los dos caminos.",
     motto: "El ciclismo es el vehículo. El destino es una educación y una carrera en el deporte.",
   },
   hub: {
@@ -299,6 +300,7 @@ const en: Dictionary = {
     p1After:
       ", the company behind advancetalenthub.com, and carries the same purpose: develop young athletes and connect them with universities in the United States and elsewhere, so their sport opens a place to study and keep growing.",
     p2: "The project also promotes participation in international events. Racing outside the country is what raises the level: it teaches riders what elite competition demands and what it takes to hold their own in it.",
+    p3: "All of this is part of a serious, structured process. We want our riders to have the tools to become professional cyclists or to go on to a university education, and for cycling to open doors for them on either path.",
     motto: "Cycling is the vehicle. The destination is an education and a career in the sport.",
   },
   hub: {

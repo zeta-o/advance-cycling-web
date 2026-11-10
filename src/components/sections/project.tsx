@@ -15,6 +15,7 @@ export function Project() {
           {t.project.p1After}
         </p>
         <p>{t.project.p2}</p>
+        <p>{t.project.p3}</p>
       </div>
       <p className="mt-9 max-w-[46ch] font-heading text-[clamp(1.1rem,2vw,1.35rem)] leading-[1.35] font-extrabold text-lime">
         {t.project.motto}
